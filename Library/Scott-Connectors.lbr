@@ -343,7 +343,6 @@
 <rectangle x1="-0.254" y1="1.016" x2="0.254" y2="1.524" layer="51" rot="R90"/>
 <rectangle x1="-0.254" y1="-1.524" x2="0.254" y2="-1.016" layer="51" rot="R90"/>
 <rectangle x1="-0.254" y1="-4.064" x2="0.254" y2="-3.556" layer="51" rot="R90"/>
-<text x="0" y="7.239" size="1.016" layer="25" font="vector" rot="R180" align="bottom-center">FTDI</text>
 <text x="1.524" y="-3.81" size="1.016" layer="21" font="vector" rot="R180" align="center-right">RXD</text>
 <text x="1.524" y="-1.27" size="1.016" layer="21" font="vector" rot="R180" align="center-right">TXD</text>
 <text x="1.524" y="1.27" size="1.016" layer="21" font="vector" rot="R180" align="center-right">GND</text>
@@ -1274,6 +1273,14 @@
 </gates>
 <devices>
 <device name="" package="JST1.25_6P">
+<connects>
+<connect gate="&gt;NAME" pin="1" pad="1"/>
+<connect gate="&gt;NAME" pin="2" pad="2"/>
+<connect gate="&gt;NAME" pin="3" pad="3"/>
+<connect gate="&gt;NAME" pin="4" pad="4"/>
+<connect gate="&gt;NAME" pin="5" pad="5"/>
+<connect gate="&gt;NAME" pin="6" pad="6"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
