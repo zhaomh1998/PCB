@@ -779,6 +779,52 @@
 <wire x1="6.6" y1="2.7" x2="6.6" y2="4.2" width="0.127" layer="21"/>
 <text x="3.175" y="-1.27" size="1.016" layer="25" font="vector" align="top-center">&gt;NAME</text>
 </package>
+<package name="JST1.25_4P">
+<description>https://item.taobao.com/item.htm?spm=a1z09.2.0.0.22f82e8dZsVtQb&amp;id=526367971594&amp;_u=p1po4ce24ab4</description>
+<smd name="1" x="0" y="0" dx="1.6" dy="0.5" layer="1" rot="R90"/>
+<smd name="2" x="1.25" y="0" dx="1.6" dy="0.5" layer="1" rot="R90"/>
+<smd name="3" x="2.5" y="0" dx="1.6" dy="0.5" layer="1" rot="R90"/>
+<smd name="4" x="3.75" y="0" dx="1.6" dy="0.5" layer="1" rot="R90"/>
+<smd name="5" x="-2.55" y="2.55" dx="2.1" dy="3" layer="1"/>
+<smd name="6" x="6.3" y="2.55" dx="2.1" dy="3" layer="1"/>
+<wire x1="-2.55" y1="0" x2="-2.55" y2="4.2" width="0.127" layer="21"/>
+<wire x1="-2.55" y1="4.2" x2="-0.35" y2="4.2" width="0.127" layer="21"/>
+<wire x1="-0.35" y1="4.2" x2="4.1" y2="4.2" width="0.127" layer="21"/>
+<wire x1="4.1" y1="4.2" x2="6.3" y2="4.2" width="0.127" layer="21"/>
+<wire x1="6.3" y1="4.2" x2="6.3" y2="0" width="0.127" layer="21"/>
+<wire x1="6.3" y1="0" x2="-2.55" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.35" y1="4.2" x2="-0.35" y2="2.7" width="0.127" layer="21"/>
+<wire x1="-0.35" y1="2.7" x2="4.1" y2="2.7" width="0.127" layer="21"/>
+<wire x1="4.1" y1="2.7" x2="4.1" y2="4.2" width="0.127" layer="21"/>
+<text x="1.925" y="-1.27" size="1.016" layer="25" font="vector" align="top-center">&gt;NAME</text>
+</package>
+<package name="USB_ON_BOARD">
+<wire x1="6.5" y1="6" x2="-5" y2="6" width="0.127" layer="21"/>
+<wire x1="-5" y1="6" x2="-5" y2="-6" width="0.127" layer="21"/>
+<wire x1="-5" y1="-6" x2="6.5" y2="-6" width="0.127" layer="21"/>
+<wire x1="6.5" y1="-6" x2="6.5" y2="6" width="0.127" layer="21"/>
+<smd name="D+" x="0" y="1" dx="6.41" dy="1" layer="1"/>
+<smd name="D-" x="0" y="-1" dx="6.41" dy="1" layer="1"/>
+<smd name="GND" x="-0.5" y="3.5" dx="7.41" dy="1" layer="1"/>
+<smd name="VCC" x="-0.5" y="-3.5" dx="7.41" dy="1" layer="1"/>
+</package>
+<package name="JST1.25_2P">
+<description>https://item.taobao.com/item.htm?spm=a1z09.2.0.0.22f82e8dZsVtQb&amp;id=526367971594&amp;_u=p1po4ce24ab4</description>
+<smd name="1" x="0" y="0" dx="1.6" dy="0.5" layer="1" rot="R90"/>
+<smd name="2" x="1.25" y="0" dx="1.6" dy="0.5" layer="1" rot="R90"/>
+<smd name="3" x="-2.55" y="2.55" dx="2.1" dy="3" layer="1"/>
+<smd name="4" x="3.8" y="2.55" dx="2.1" dy="3" layer="1"/>
+<wire x1="-2.55" y1="0" x2="-2.55" y2="4.2" width="0.127" layer="21"/>
+<wire x1="-2.55" y1="4.2" x2="-0.35" y2="4.2" width="0.127" layer="21"/>
+<wire x1="-0.35" y1="4.2" x2="1.6" y2="4.2" width="0.127" layer="21"/>
+<wire x1="1.6" y1="4.2" x2="3.8" y2="4.2" width="0.127" layer="21"/>
+<wire x1="3.8" y1="4.2" x2="3.8" y2="0" width="0.127" layer="21"/>
+<wire x1="3.8" y1="0" x2="-2.55" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.35" y1="4.2" x2="-0.35" y2="2.7" width="0.127" layer="21"/>
+<wire x1="-0.35" y1="2.7" x2="1.6" y2="2.7" width="0.127" layer="21"/>
+<wire x1="1.6" y1="2.7" x2="1.6" y2="4.2" width="0.127" layer="21"/>
+<text x="0.655" y="-1.27" size="1.016" layer="25" font="vector" align="top-center">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="ED555/2DS" urn="urn:adsk.eagle:package:220531/3" locally_modified="yes" type="model">
@@ -1081,6 +1127,40 @@
 <pin name="6" x="6.35" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="5" x="3.81" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R270"/>
 </symbol>
+<symbol name="USB_ON_BOARD">
+<circle x="-1.32" y="1.6" radius="0.5" width="1" layer="94"/>
+<circle x="-5.92" y="3.2" radius="0.2" width="1" layer="94"/>
+<rectangle x1="-7.12" y1="-0.45" x2="-5.92" y2="0.75" layer="94"/>
+<wire x1="-10.2" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-1.32" y1="1.6" x2="-3.47" y2="1.6" width="0.254" layer="94"/>
+<wire x1="-3.47" y1="1.6" x2="-4.22" y2="1.6" width="0.254" layer="94"/>
+<wire x1="-5.52" y1="3.2" x2="-4.52" y2="3.2" width="0.254" layer="94"/>
+<wire x1="-6.27" y1="0.15" x2="-5.07" y2="0.15" width="0.254" layer="94"/>
+<wire x1="-5.07" y1="0.15" x2="-4.22" y2="1.6" width="0.254" layer="94"/>
+<wire x1="-4.52" y1="3.2" x2="-3.47" y2="1.6" width="0.254" layer="94"/>
+<wire x1="-4.22" y1="1.6" x2="-7.92" y2="1.6" width="0.254" layer="94"/>
+<wire x1="-7.92" y1="1.6" x2="-7.92" y2="0.8" width="0.254" layer="94"/>
+<wire x1="-7.92" y1="0.8" x2="-8.12" y2="0.8" width="0.254" layer="94"/>
+<wire x1="-8.12" y1="0.8" x2="-8.92" y2="1.6" width="0.254" layer="94"/>
+<wire x1="-8.92" y1="1.6" x2="-8.12" y2="2.4" width="0.254" layer="94"/>
+<wire x1="-8.12" y1="1" x2="-8.12" y2="2.4" width="0.254" layer="94"/>
+<wire x1="-8.12" y1="2.4" x2="-7.92" y2="2.4" width="0.254" layer="94"/>
+<wire x1="-7.92" y1="2.4" x2="-7.92" y2="1.6" width="0.254" layer="94"/>
+<wire x1="-8.52" y1="1.6" x2="-8.52" y2="1.4" width="0.254" layer="94"/>
+<wire x1="-8.52" y1="1.4" x2="-8.32" y2="1.2" width="0.254" layer="94"/>
+<wire x1="-8.32" y1="1.2" x2="-8.32" y2="2" width="0.254" layer="94"/>
+<wire x1="-8.32" y1="2" x2="-8.72" y2="1.6" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<pin name="D+" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="D-" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="10.16" y="-2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="VBUS" x="10.16" y="5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
+<text x="-10.16" y="8.636" size="1.27" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-7.62" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="XH_2.54_2P">
@@ -1268,6 +1348,44 @@
 </devices>
 </deviceset>
 <deviceset name="JST_1.25_6P">
+<gates>
+<gate name="&gt;NAME" symbol="JST_6P" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="JST1.25_6P">
+<connects>
+<connect gate="&gt;NAME" pin="1" pad="1"/>
+<connect gate="&gt;NAME" pin="2" pad="2"/>
+<connect gate="&gt;NAME" pin="3" pad="3"/>
+<connect gate="&gt;NAME" pin="4" pad="4"/>
+<connect gate="&gt;NAME" pin="5" pad="5"/>
+<connect gate="&gt;NAME" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="USB_ON_BOARD">
+<gates>
+<gate name="1" symbol="USB_ON_BOARD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="USB_ON_BOARD">
+<connects>
+<connect gate="1" pin="D+" pad="D+"/>
+<connect gate="1" pin="D-" pad="D-"/>
+<connect gate="1" pin="GND" pad="GND"/>
+<connect gate="1" pin="VBUS" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JST_1.25_BATT">
 <gates>
 <gate name="&gt;NAME" symbol="JST_6P" x="0" y="-2.54"/>
 </gates>
