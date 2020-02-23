@@ -299,14 +299,18 @@
 <text x="1.27" y="34.544" size="1.016" layer="21" font="vector" align="center">37</text>
 <text x="-1.27" y="34.544" size="1.016" layer="21" font="vector" align="center">38</text>
 <text x="-3.81" y="34.544" size="1.016" layer="21" font="vector" align="center">39</text>
-<wire x1="-16.764" y1="-12.192" x2="38.227" y2="-12.065" width="0" layer="20"/>
-<wire x1="38.227" y1="-12.065" x2="38.1" y2="35.56" width="0" layer="20"/>
-<wire x1="38.1" y1="35.56" x2="-16.764" y2="35.56" width="0" layer="20"/>
-<wire x1="-16.764" y1="35.56" x2="-16.764" y2="-12.192" width="0" layer="20"/>
 <text x="-14.732" y="15.621" size="1.27" layer="21" font="vector" rot="R270">GND</text>
 <text x="-13.462" y="1.524" size="1.27" layer="21" font="vector" rot="R90">VCC</text>
-<text x="6.604" y="21.717" size="1.778" layer="21" font="vector">STM32F3 ADC Test V1
-Aug 20, 2019</text>
+<text x="6.604" y="21.717" size="1.778" layer="21" font="vector">STM32F3 ADC Test V2
+Aug 30, 2019</text>
+<wire x1="-16.637" y1="33.02" x2="-16.637" y2="-10.16" width="0" layer="20"/>
+<wire x1="-16.637" y1="-10.16" x2="-13.97" y2="-12.7" width="0" layer="20" curve="90"/>
+<wire x1="-13.97" y1="-12.7" x2="53.34" y2="-12.7" width="0" layer="20"/>
+<wire x1="53.34" y1="-12.7" x2="55.88" y2="-10.16" width="0" layer="20" curve="90"/>
+<wire x1="55.88" y1="-10.16" x2="55.88" y2="33.02" width="0" layer="20"/>
+<wire x1="55.88" y1="33.02" x2="53.34" y2="35.56" width="0" layer="20" curve="90"/>
+<wire x1="53.34" y1="35.56" x2="-13.97" y2="35.56" width="0" layer="20"/>
+<wire x1="-13.97" y1="35.56" x2="-16.637" y2="33.02" width="0" layer="20" curve="90"/>
 </plain>
 <libraries>
 <library name="Scott-Electrical">
@@ -357,6 +361,30 @@ Aug 20, 2019</text>
 <rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
 <rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+</package>
+<package name="RESCAF80P320X160X60-8N">
+<wire x1="-0.9" y1="1.7" x2="0.9" y2="1.7" width="0.127" layer="51"/>
+<wire x1="0.9" y1="1.7" x2="0.9" y2="-1.7" width="0.127" layer="51"/>
+<wire x1="0.9" y1="-1.7" x2="-0.9" y2="-1.7" width="0.127" layer="51"/>
+<wire x1="-0.9" y1="-1.7" x2="-0.9" y2="1.7" width="0.127" layer="51"/>
+<wire x1="-0.9" y1="1.7" x2="0.9" y2="1.7" width="0.127" layer="21"/>
+<wire x1="0.9" y1="-1.7" x2="-0.9" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-1.61" y1="1.95" x2="1.61" y2="1.95" width="0.05" layer="39"/>
+<wire x1="1.61" y1="1.95" x2="1.61" y2="-1.95" width="0.05" layer="39"/>
+<wire x1="1.61" y1="-1.95" x2="-1.61" y2="-1.95" width="0.05" layer="39"/>
+<wire x1="-1.61" y1="-1.95" x2="-1.61" y2="1.95" width="0.05" layer="39"/>
+<circle x="-1.9" y="1.5" radius="0.1" width="0.2" layer="21"/>
+<circle x="-1.9" y="1.5" radius="0.1" width="0.2" layer="51"/>
+<text x="0" y="2.54" size="1.016" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.016" layer="27" font="vector" align="top-center">&gt;VALUE</text>
+<smd name="1" x="-0.875" y="1.2" dx="0.97" dy="0.53" layer="1" roundness="25"/>
+<smd name="2" x="-0.875" y="0.4" dx="0.97" dy="0.53" layer="1" roundness="25"/>
+<smd name="3" x="-0.875" y="-0.4" dx="0.97" dy="0.53" layer="1" roundness="25"/>
+<smd name="4" x="-0.875" y="-1.2" dx="0.97" dy="0.53" layer="1" roundness="25"/>
+<smd name="5" x="0.875" y="-1.2" dx="0.97" dy="0.53" layer="1" roundness="25" rot="R180"/>
+<smd name="6" x="0.875" y="-0.4" dx="0.97" dy="0.53" layer="1" roundness="25" rot="R180"/>
+<smd name="7" x="0.875" y="0.4" dx="0.97" dy="0.53" layer="1" roundness="25" rot="R180"/>
+<smd name="8" x="0.875" y="1.2" dx="0.97" dy="0.53" layer="1" roundness="25" rot="R180"/>
 </package>
 </packages>
 <packages3d>
@@ -985,6 +1013,105 @@ Datasheet</description>
 </package3d>
 </packages3d>
 </library>
+<library name="Scott-Sensors">
+<packages>
+<package name="QRE1113-W">
+<description>&lt;h3&gt;QRE1113, QRE1113GR SMD Reflective Object Sensor (Wide Pin footprint)&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/SMD/QRE1113.GR.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;
+&lt;li&gt;Pin Count: 4&lt;/li&gt;
+&lt;li&gt;Dimensions: 3.2 x 2.5 x 1.5 mm&lt;/li&gt;
+&lt;li&gt;Pitch: 1.8 mm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Devices Using:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;QRE1113&lt;/li&gt;
+&lt;/ul&gt;</description>
+<smd name="1" x="-1.927" y="-0.9" dx="1.778" dy="0.762" layer="1"/>
+<smd name="2" x="1.927" y="-0.9" dx="1.778" dy="0.762" layer="1"/>
+<smd name="3" x="1.927" y="0.9" dx="1.778" dy="0.762" layer="1"/>
+<smd name="4" x="-1.927" y="0.9" dx="1.778" dy="0.762" layer="1"/>
+<text x="0" y="1.905" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.905" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<text x="0" y="1.905" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<wire x1="1.35" y1="1.7" x2="-1.35" y2="1.7" width="0.127" layer="51"/>
+<wire x1="-1.35" y1="1.7" x2="-1.35" y2="-1.7" width="0.127" layer="51"/>
+<wire x1="-1.35" y1="-1.7" x2="1.35" y2="-1.7" width="0.127" layer="51"/>
+<wire x1="1.35" y1="-1.7" x2="1.35" y2="1.7" width="0.127" layer="51"/>
+<wire x1="-1.427" y1="1.5" x2="-1.427" y2="1.827" width="0.2032" layer="21"/>
+<wire x1="-1.427" y1="1.827" x2="1.4635" y2="1.827" width="0.2032" layer="21"/>
+<wire x1="1.4635" y1="1.827" x2="1.4635" y2="1.527" width="0.2032" layer="21"/>
+<wire x1="-1.5605" y1="-1.4875" x2="-1.227" y2="-1.827" width="0.2032" layer="21"/>
+<wire x1="-1.227" y1="-1.827" x2="1.4635" y2="-1.827" width="0.2032" layer="21"/>
+<wire x1="1.4635" y1="-1.827" x2="1.4635" y2="-1.5" width="0.2032" layer="21"/>
+<circle x="-1.8415" y="-1.7145" radius="0.254" width="0" layer="21"/>
+</package>
+</packages>
+</library>
+<library name="SparkFun-Connectors">
+<description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
+This library contains electrically-functional connectors. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="1X04">
+<description>&lt;h3&gt;Plated Through Hole - 4 Pin&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:4&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_04&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="6.985" y1="1.27" x2="8.255" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="8.255" y1="1.27" x2="8.89" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="8.89" y1="-0.635" x2="8.255" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="8.255" y1="-1.27" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="8.89" y1="0.635" x2="8.89" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1176,7 +1303,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="20.7645" y="2.794" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="20.2883" y="2.286" size="0.635" layer="27" font="vector" rot="R90" align="top-center"/>
 </element>
-<element name="U$1" library="Scott-MCU" package="LQFP-100" value="STM32F303VCT6" x="6.35" y="19.05" smashed="yes">
+<element name="STM32F303" library="Scott-MCU" package="LQFP-100" value="STM32F303VCT6" x="6.35" y="19.05" smashed="yes">
 <attribute name="VALUE" x="7.078" y="11.678" size="1.143" layer="21" font="vector"/>
 </element>
 <element name="U$3" library="Scott-Connectors" package="JTAG_SWD" value="JTAG-SWD" x="-11.049" y="0.127" smashed="yes"/>
@@ -1230,11 +1357,11 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="13.919" y="-1.894" size="0.8128" layer="25" font="vector" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="13.954" y="2.246" size="0.8128" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
-<element name="C13" library="Scott-Electrical" package="CAP_0603" value="10p" x="15.113" y="-1.651" smashed="yes" rot="R90">
+<element name="C13" library="Scott-Electrical" package="CAP_0603" value="20p" x="15.113" y="-1.651" smashed="yes" rot="R90">
 <attribute name="NAME" x="16.891" y="-2.2225" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="15.113" y="0.0953" size="0.635" layer="27" font="vector" rot="R180" align="top-center"/>
 </element>
-<element name="C14" library="Scott-Electrical" package="CAP_0603" value="10p" x="9.525" y="-1.651" smashed="yes" rot="R90">
+<element name="C14" library="Scott-Electrical" package="CAP_0603" value="20p" x="9.525" y="-1.651" smashed="yes" rot="R90">
 <attribute name="NAME" x="8.636" y="0.9525" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="9.525" y="0.0953" size="0.635" layer="27" font="vector" rot="R180" align="top-center"/>
 </element>
@@ -1287,7 +1414,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="-3.81" y="8.128" size="1.016" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="VALUE" x="-5.08" y="5.08" size="0.6096" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
-<element name="R7" library="Scott-Electrical" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="390" x="14.478" y="2.159" smashed="yes">
+<element name="R7" library="Scott-Electrical" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="220" x="14.478" y="2.159" smashed="yes">
 <attribute name="NAME" x="14.732" y="0.508" size="0.8128" layer="25" font="vector"/>
 <attribute name="PROD_ID" value=" " x="14.478" y="2.159" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="13.843" y="0.254" size="0.8128" layer="27" font="vector"/>
@@ -1309,17 +1436,63 @@ Please make sure your boards conform to these design rules.
 <attribute name="PROD_ID" value=" " x="-7.366" y="2.54" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="-5.461" y="1.905" size="0.8128" layer="27" font="vector" rot="R90"/>
 </element>
+<element name="U5" library="Scott-Sensors" package="QRE1113-W" value="QRE1113" x="44.577" y="0.254" smashed="yes" rot="MR90">
+<attribute name="NAME" x="46.482" y="0.254" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
+<attribute name="NAME" x="46.482" y="0.254" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
+<attribute name="PROD_ID" value="IC-09357" x="42.037" y="24.384" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="SF_ID" value="COM-09542" x="42.037" y="24.384" size="1.778" layer="28" rot="MR90" display="off"/>
+</element>
+<element name="U6" library="Scott-Sensors" package="QRE1113-W" value="QRE1113" x="44.577" y="7.874" smashed="yes" rot="MR90">
+<attribute name="NAME" x="46.482" y="7.874" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
+<attribute name="NAME" x="46.482" y="7.874" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
+<attribute name="PROD_ID" value="IC-09357" x="33.147" y="24.384" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="SF_ID" value="COM-09542" x="33.147" y="24.384" size="1.778" layer="28" rot="MR90" display="off"/>
+</element>
+<element name="U7" library="Scott-Sensors" package="QRE1113-W" value="QRE1113" x="44.577" y="15.494" smashed="yes" rot="MR90">
+<attribute name="NAME" x="46.482" y="15.494" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
+<attribute name="NAME" x="46.482" y="15.494" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
+<attribute name="PROD_ID" value="IC-09357" x="33.147" y="38.354" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="SF_ID" value="COM-09542" x="33.147" y="38.354" size="1.778" layer="28" rot="MR90" display="off"/>
+</element>
+<element name="U8" library="Scott-Sensors" package="QRE1113-W" value="QRE1113" x="44.577" y="23.114" smashed="yes" rot="MR90">
+<attribute name="NAME" x="46.482" y="23.114" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
+<attribute name="NAME" x="46.482" y="23.114" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
+<attribute name="PROD_ID" value="IC-09357" x="28.067" y="39.624" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="SF_ID" value="COM-09542" x="28.067" y="39.624" size="1.778" layer="28" rot="MR90" display="off"/>
+</element>
+<element name="R12" library="Scott-Electrical" package="RESCAF80P320X160X60-8N" value="10k" x="48.387" y="11.684" smashed="yes" rot="MR0">
+<attribute name="NAME" x="45.847" y="11.684" size="1.016" layer="26" font="vector" rot="MR90" align="bottom-center"/>
+<attribute name="VALUE" x="50.927" y="11.684" size="1.016" layer="28" font="vector" rot="MR90" align="top-center"/>
+</element>
+<element name="R13" library="Scott-Electrical" package="RESCAF80P320X160X60-8N" value="100" x="40.767" y="11.684" smashed="yes" rot="MR180">
+<attribute name="NAME" x="43.307" y="11.684" size="1.016" layer="26" font="vector" rot="MR270" align="bottom-center"/>
+<attribute name="VALUE" x="38.227" y="11.684" size="1.016" layer="28" font="vector" rot="MR270" align="top-center"/>
+</element>
+<element name="PHOTO" library="SparkFun-Connectors" package="1X04" value="" x="53.086" y="7.874" smashed="yes" rot="R90">
+<attribute name="NAME" x="51.435" y="9.525" size="1.016" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="PROD_ID" value="CONN-09696" x="53.086" y="7.874" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="55.118" y="6.604" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
+</element>
+<element name="GND" library="Scott-Connectors" package="1X01" value="THD_01" x="53.086" y="5.334" smashed="yes" rot="R90">
+<attribute name="NAME" x="51.435" y="3.937" size="1.016" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="VALUE" x="54.61" y="4.064" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-left"/>
+</element>
+<element name="R10" library="Scott-Electrical" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="1.5K" x="-8.001" y="17.272" smashed="yes" rot="R180">
+<attribute name="NAME" x="-6.223" y="17.018" size="0.8128" layer="25" font="vector"/>
+<attribute name="PROD_ID" value=" " x="-8.001" y="17.272" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="-7.366" y="19.177" size="0.8128" layer="27" font="vector" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
 <contactref element="U$3" pad="GND"/>
 <contactref element="C9" pad="2"/>
-<contactref element="U$1" pad="49"/>
-<contactref element="U$1" pad="74"/>
-<contactref element="U$1" pad="99"/>
+<contactref element="STM32F303" pad="49"/>
+<contactref element="STM32F303" pad="74"/>
+<contactref element="STM32F303" pad="99"/>
 <contactref element="C8" pad="2"/>
 <contactref element="C7" pad="2"/>
-<contactref element="U$1" pad="20"/>
+<contactref element="STM32F303" pad="20"/>
 <contactref element="AMS1117" pad="1"/>
 <contactref element="C10" pad="2"/>
 <contactref element="C11" pad="2"/>
@@ -1344,15 +1517,14 @@ Please make sure your boards conform to these design rules.
 <polygon width="0.254" layer="1" isolate="0.3048" rank="6">
 <vertex x="-17.653" y="36.068"/>
 <vertex x="-17.653" y="-13.208"/>
-<vertex x="-13.97" y="-13.208"/>
-<vertex x="39.624" y="-13.208"/>
-<vertex x="39.624" y="36.068"/>
+<vertex x="56.134" y="-13.208"/>
+<vertex x="56.134" y="36.068"/>
 </polygon>
 <polygon width="0.254" layer="16" isolate="0.3048" rank="6">
 <vertex x="-17.653" y="36.068"/>
 <vertex x="-17.653" y="-13.208"/>
-<vertex x="39.624" y="-13.208"/>
-<vertex x="39.624" y="36.068"/>
+<vertex x="56.134" y="-13.208"/>
+<vertex x="56.134" y="36.068"/>
 </polygon>
 <via x="20.701" y="19.685" extent="1-16" drill="0.3048"/>
 <via x="17.018" y="26.67" extent="1-16" drill="0.3048"/>
@@ -1413,6 +1585,15 @@ Please make sure your boards conform to these design rules.
 <via x="25.146" y="0.254" extent="1-16" drill="0.3048"/>
 <via x="20.955" y="3.556" extent="1-16" drill="0.3048"/>
 <via x="-8.763" y="8.001" extent="1-16" drill="0.3048"/>
+<contactref element="U5" pad="2"/>
+<contactref element="U5" pad="4"/>
+<contactref element="U6" pad="2"/>
+<contactref element="U6" pad="4"/>
+<contactref element="U7" pad="2"/>
+<contactref element="U7" pad="4"/>
+<contactref element="U8" pad="2"/>
+<contactref element="U8" pad="4"/>
+<contactref element="GND" pad="1"/>
 </signal>
 <signal name="5V">
 <contactref element="AMS1117" pad="3"/>
@@ -1433,14 +1614,14 @@ Please make sure your boards conform to these design rules.
 <contactref element="R5" pad="2"/>
 <wire x1="3.048" y1="25.273" x2="0.178" y2="25.273" width="0.4064" layer="1"/>
 <contactref element="BOOT0" pad="3"/>
-<contactref element="U$1" pad="28"/>
+<contactref element="STM32F303" pad="28"/>
 <contactref element="C1" pad="1"/>
 <contactref element="C5" pad="1"/>
-<contactref element="U$1" pad="50"/>
+<contactref element="STM32F303" pad="50"/>
 <contactref element="C2" pad="1"/>
 <contactref element="C3" pad="1"/>
-<contactref element="U$1" pad="75"/>
-<contactref element="U$1" pad="100"/>
+<contactref element="STM32F303" pad="75"/>
+<contactref element="STM32F303" pad="100"/>
 <contactref element="C4" pad="1"/>
 <wire x1="21.1" y1="7.05" x2="22.795" y2="7.05" width="0.4064" layer="1"/>
 <wire x1="24.511" y1="5.334" x2="24.511" y2="4.191" width="0.4064" layer="1"/>
@@ -1456,7 +1637,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="5.08" y1="19.685" x2="3.302" y2="17.907" width="0.4064" layer="1"/>
 <wire x1="3.302" y1="17.907" x2="3.302" y2="8.382" width="0.4064" layer="1"/>
 <contactref element="B1" pad="1"/>
-<contactref element="U$1" pad="6"/>
+<contactref element="STM32F303" pad="6"/>
 <contactref element="R9" pad="2"/>
 <wire x1="3.302" y1="8.382" x2="3.81" y2="7.874" width="0.4064" layer="1"/>
 <wire x1="-7.366" y1="3.39" x2="-7.366" y2="5.08" width="0.4064" layer="1"/>
@@ -1514,10 +1695,48 @@ Please make sure your boards conform to these design rules.
 <wire x1="3.048" y1="25.273" x2="19.558" y2="25.273" width="0.4064" layer="1"/>
 <wire x1="19.558" y1="25.273" x2="23.749" y2="21.082" width="0.4064" layer="1"/>
 <wire x1="23.749" y1="21.082" x2="23.749" y2="18.034" width="0.4064" layer="1"/>
+<contactref element="R12" pad="5"/>
+<contactref element="R12" pad="6"/>
+<contactref element="R12" pad="7"/>
+<contactref element="R12" pad="8"/>
+<wire x1="47.512" y1="10.484" x2="47.512" y2="11.284" width="0.3556" layer="16"/>
+<wire x1="47.512" y1="11.284" x2="47.512" y2="11.684" width="0.3556" layer="16"/>
+<wire x1="47.512" y1="11.684" x2="47.512" y2="12.084" width="0.3556" layer="16"/>
+<wire x1="47.512" y1="12.084" x2="47.512" y2="12.884" width="0.3556" layer="16"/>
+<contactref element="R13" pad="5"/>
+<contactref element="R13" pad="6"/>
+<contactref element="R13" pad="7"/>
+<contactref element="R13" pad="8"/>
+<wire x1="41.642" y1="12.884" x2="41.642" y2="12.084" width="0.3556" layer="16"/>
+<wire x1="41.642" y1="12.084" x2="41.642" y2="11.684" width="0.3556" layer="16"/>
+<wire x1="41.642" y1="11.684" x2="41.642" y2="11.284" width="0.3556" layer="16"/>
+<wire x1="41.642" y1="11.284" x2="41.642" y2="10.484" width="0.3556" layer="16"/>
+<wire x1="41.642" y1="11.684" x2="42.291" y2="11.684" width="0.3556" layer="16"/>
+<wire x1="47.512" y1="11.684" x2="46.863" y2="11.684" width="0.3556" layer="16"/>
+<wire x1="47.512" y1="11.284" x2="47.263" y2="11.284" width="0.1524" layer="16"/>
+<wire x1="47.263" y1="11.284" x2="46.863" y2="11.684" width="0.1524" layer="16"/>
+<wire x1="46.863" y1="11.684" x2="47.263" y2="12.084" width="0.1524" layer="16"/>
+<wire x1="47.263" y1="12.084" x2="47.512" y2="12.084" width="0.1524" layer="16"/>
+<wire x1="41.642" y1="11.284" x2="41.891" y2="11.284" width="0.1524" layer="16"/>
+<wire x1="41.891" y1="11.284" x2="42.291" y2="11.684" width="0.1524" layer="16"/>
+<wire x1="41.642" y1="12.084" x2="41.891" y2="12.084" width="0.1524" layer="16"/>
+<wire x1="41.891" y1="12.084" x2="42.291" y2="11.684" width="0.1524" layer="16"/>
+<wire x1="46.863" y1="11.684" x2="45.593" y2="11.684" width="0.3556" layer="16"/>
+<via x="45.593" y="11.684" extent="1-16" drill="0.35"/>
+<wire x1="45.593" y1="11.684" x2="43.561" y2="11.684" width="0.3556" layer="1"/>
+<via x="43.561" y="11.684" extent="1-16" drill="0.35"/>
+<wire x1="43.561" y1="11.684" x2="42.291" y2="11.684" width="0.3556" layer="16"/>
+<wire x1="37.592" y1="17.653" x2="43.561" y2="11.684" width="0.4064" layer="1"/>
+<wire x1="37.592" y1="20.97305625" x2="37.592" y2="17.653" width="0.4064" layer="1"/>
+<wire x1="33.29205625" y1="25.273" x2="37.592" y2="20.97305625" width="0.4064" layer="1"/>
+<wire x1="19.558" y1="25.273" x2="33.29205625" y2="25.273" width="0.4064" layer="1"/>
+<contactref element="R10" pad="1"/>
+<wire x1="-7.151" y1="17.272" x2="-6.477" y2="16.598" width="0.254" layer="1"/>
+<wire x1="-6.477" y1="16.598" x2="-0.635" y2="16.598" width="0.254" layer="1"/>
 </signal>
 <signal name="SWCLK">
 <contactref element="U$3" pad="SWCLK"/>
-<contactref element="U$1" pad="76"/>
+<contactref element="STM32F303" pad="76"/>
 <wire x1="5.6" y1="18.05" x2="6.969" y2="18.05" width="0.254" layer="1"/>
 <wire x1="6.969" y1="18.05" x2="7.112" y2="17.907" width="0.254" layer="1"/>
 <via x="7.112" y="17.907" extent="1-16" drill="0.3048"/>
@@ -1530,7 +1749,7 @@ Please make sure your boards conform to these design rules.
 </signal>
 <signal name="SWDIO">
 <contactref element="U$3" pad="SWDIO"/>
-<contactref element="U$1" pad="72"/>
+<contactref element="STM32F303" pad="72"/>
 <wire x1="8.85" y1="19.8" x2="8.85" y2="18.883" width="0.254" layer="1"/>
 <wire x1="8.85" y1="18.883" x2="8.636" y2="18.669" width="0.254" layer="1"/>
 <via x="8.636" y="18.669" extent="1-16" drill="0.3048"/>
@@ -1542,7 +1761,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="-6.477" y1="8.001" x2="-6.477" y2="-2.921" width="0.254" layer="16"/>
 </signal>
 <signal name="NRST">
-<contactref element="U$1" pad="14"/>
+<contactref element="STM32F303" pad="14"/>
 <contactref element="U$3" pad="!RST"/>
 <contactref element="C9" pad="1"/>
 <contactref element="RST" pad="2"/>
@@ -1562,7 +1781,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="8.763" y1="0.381" x2="13.589" y2="5.207" width="0.254" layer="16"/>
 </signal>
 <signal name="BOOT0">
-<contactref element="U$1" pad="94"/>
+<contactref element="STM32F303" pad="94"/>
 <contactref element="R8" pad="1"/>
 <wire x1="-7.366" y1="12.788" x2="-4.992" y2="10.414" width="0.254" layer="1"/>
 <wire x1="-4.992" y1="10.414" x2="2.159" y2="10.414" width="0.254" layer="1"/>
@@ -1575,7 +1794,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="7.145" y1="9.05" x2="5.6" y2="9.05" width="0.254" layer="1"/>
 </signal>
 <signal name="ADC1_IN6">
-<contactref element="U$1" pad="15"/>
+<contactref element="STM32F303" pad="15"/>
 <contactref element="J1" pad="1"/>
 <wire x1="14.35" y1="4.3" x2="14.35" y2="5.2048" width="0.254" layer="1"/>
 <wire x1="14.35" y1="5.2048" x2="14.1816" y2="5.3732" width="0.254" layer="1"/>
@@ -1588,7 +1807,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="-3.81" y1="-5.334" x2="-3.81" y2="-6.35" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC1_IN7">
-<contactref element="U$1" pad="16"/>
+<contactref element="STM32F303" pad="16"/>
 <contactref element="J1" pad="2"/>
 <wire x1="14.85" y1="4.3" x2="14.85" y2="5.4119125" width="0.254" layer="1"/>
 <wire x1="14.85" y1="5.4119125" x2="14.7658" y2="5.4961125" width="0.254" layer="1"/>
@@ -1601,7 +1820,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="-1.27" y1="-5.588" x2="-1.27" y2="-6.35" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC1_IN8">
-<contactref element="U$1" pad="17"/>
+<contactref element="STM32F303" pad="17"/>
 <contactref element="J1" pad="3"/>
 <via x="15.35" y="5.715" extent="1-16" drill="0.3048"/>
 <wire x1="15.35" y1="4.3" x2="15.35" y2="5.715" width="0.254" layer="1"/>
@@ -1612,7 +1831,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="1.27" y1="-5.715" x2="1.27" y2="-6.35" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC1_IN9">
-<contactref element="U$1" pad="18"/>
+<contactref element="STM32F303" pad="18"/>
 <contactref element="J1" pad="4"/>
 <wire x1="15.85" y1="4.3" x2="15.85" y2="5.4119125" width="0.254" layer="1"/>
 <wire x1="15.85" y1="5.4119125" x2="15.9342" y2="5.4961125" width="0.254" layer="1"/>
@@ -1625,7 +1844,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="3.81" y1="-5.969" x2="3.81" y2="-6.35" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC1_IN10">
-<contactref element="U$1" pad="19"/>
+<contactref element="STM32F303" pad="19"/>
 <contactref element="J1" pad="5"/>
 <wire x1="16.35" y1="4.3" x2="16.35" y2="5.2048" width="0.254" layer="1"/>
 <wire x1="16.35" y1="5.2048" x2="16.5184" y2="5.3732" width="0.254" layer="1"/>
@@ -1636,7 +1855,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="16.5184" y1="4.03795" x2="6.35" y2="-6.13045" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC1_IN1">
-<contactref element="U$1" pad="23"/>
+<contactref element="STM32F303" pad="23"/>
 <contactref element="J1" pad="6"/>
 <wire x1="18.35" y1="4.3" x2="18.35" y2="5.2048" width="0.254" layer="1"/>
 <wire x1="18.35" y1="5.2048" x2="18.2658" y2="5.289" width="0.254" layer="1"/>
@@ -1646,7 +1865,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="18.2658" y1="5.715" x2="18.2658" y2="3.0258" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC1_IN2">
-<contactref element="U$1" pad="24"/>
+<contactref element="STM32F303" pad="24"/>
 <contactref element="J1" pad="7"/>
 <via x="18.85" y="5.715" extent="1-16" drill="0.3048"/>
 <wire x1="18.85" y1="4.3" x2="18.85" y2="5.715" width="0.254" layer="1"/>
@@ -1654,7 +1873,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="18.85" y1="5.715" x2="18.85" y2="1.07" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC1_IN3">
-<contactref element="U$1" pad="25"/>
+<contactref element="STM32F303" pad="25"/>
 <contactref element="J1" pad="8"/>
 <wire x1="19.35" y1="4.3" x2="19.35" y2="5.2048" width="0.254" layer="1"/>
 <wire x1="19.35" y1="5.2048" x2="19.4342" y2="5.289" width="0.254" layer="1"/>
@@ -1664,7 +1883,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="19.4342" y1="5.715" x2="19.4342" y2="-0.8858" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC1_IN4">
-<contactref element="U$1" pad="26"/>
+<contactref element="STM32F303" pad="26"/>
 <contactref element="J1" pad="9"/>
 <wire x1="21.1" y1="6.05" x2="22.208" y2="6.05" width="0.254" layer="1"/>
 <wire x1="22.208" y1="6.05" x2="22.606" y2="5.652" width="0.254" layer="1"/>
@@ -1673,7 +1892,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="22.606" y1="-0.127" x2="16.51" y2="-6.223" width="0.254" layer="1"/>
 </signal>
 <signal name="ADC1_IN5">
-<contactref element="U$1" pad="27"/>
+<contactref element="STM32F303" pad="27"/>
 <contactref element="J1" pad="10"/>
 <wire x1="21.1" y1="6.55" x2="22.4151125" y2="6.55" width="0.254" layer="1"/>
 <wire x1="22.4151125" y1="6.55" x2="23.106" y2="5.8591125" width="0.254" layer="1"/>
@@ -1681,7 +1900,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="23.106" y1="5.8591125" x2="23.106" y2="-2.294" width="0.254" layer="1"/>
 </signal>
 <signal name="ADC2_IN1">
-<contactref element="U$1" pad="29"/>
+<contactref element="STM32F303" pad="29"/>
 <contactref element="J1" pad="11"/>
 <wire x1="21.1" y1="7.55" x2="23.819" y2="7.55" width="0.254" layer="1"/>
 <wire x1="27.305" y1="4.064" x2="27.305" y2="-0.635" width="0.254" layer="1"/>
@@ -1689,7 +1908,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="23.819" y1="7.55" x2="27.305" y2="4.064" width="0.254" layer="1"/>
 </signal>
 <signal name="ADC2_IN2">
-<contactref element="U$1" pad="30"/>
+<contactref element="STM32F303" pad="30"/>
 <contactref element="J1" pad="12"/>
 <wire x1="21.1" y1="8.05" x2="24.0261125" y2="8.05" width="0.254" layer="1"/>
 <wire x1="28.067" y1="-2.413" x2="24.13" y2="-6.35" width="0.254" layer="1"/>
@@ -1697,7 +1916,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="28.067" y1="4.0091125" x2="28.067" y2="-2.413" width="0.254" layer="1"/>
 </signal>
 <signal name="ADC2_IN3">
-<contactref element="U$1" pad="31"/>
+<contactref element="STM32F303" pad="31"/>
 <contactref element="J1" pad="13"/>
 <wire x1="21.1" y1="8.55" x2="24.360225" y2="8.55" width="0.254" layer="1"/>
 <wire x1="28.702" y1="4.208225" x2="28.702" y2="-2.54" width="0.254" layer="1"/>
@@ -1706,14 +1925,14 @@ Please make sure your boards conform to these design rules.
 <wire x1="24.360225" y1="8.55" x2="28.702" y2="4.208225" width="0.254" layer="1"/>
 </signal>
 <signal name="ADC2_IN4">
-<contactref element="U$1" pad="32"/>
+<contactref element="STM32F303" pad="32"/>
 <contactref element="J1" pad="14"/>
 <wire x1="21.1" y1="9.05" x2="24.6943375" y2="9.05" width="0.254" layer="1"/>
 <wire x1="29.21" y1="4.5343375" x2="29.21" y2="-6.35" width="0.254" layer="1"/>
 <wire x1="24.6943375" y1="9.05" x2="29.21" y2="4.5343375" width="0.254" layer="1"/>
 </signal>
 <signal name="ADC2_IN5">
-<contactref element="U$1" pad="33"/>
+<contactref element="STM32F303" pad="33"/>
 <contactref element="J1" pad="15"/>
 <wire x1="25.02845" y1="9.55" x2="21.1" y2="9.55" width="0.254" layer="1"/>
 <wire x1="29.718" y1="-2.667" x2="31.75" y2="-4.699" width="0.254" layer="1"/>
@@ -1722,7 +1941,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="29.718" y1="4.86045" x2="29.718" y2="-2.667" width="0.254" layer="1"/>
 </signal>
 <signal name="ADC2_IN11">
-<contactref element="U$1" pad="34"/>
+<contactref element="STM32F303" pad="34"/>
 <contactref element="J3" pad="9"/>
 <wire x1="21.1" y1="10.05" x2="20.1952" y2="10.05" width="0.254" layer="1"/>
 <wire x1="20.1952" y1="10.05" x2="19.69" y2="9.5448" width="0.254" layer="1"/>
@@ -1732,7 +1951,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="19.05" y1="9.5448" x2="24.9992" y2="9.5448" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC3_IN12">
-<contactref element="U$1" pad="35"/>
+<contactref element="STM32F303" pad="35"/>
 <contactref element="J3" pad="8"/>
 <wire x1="21.1" y1="10.55" x2="19.9880875" y2="10.55" width="0.254" layer="1"/>
 <wire x1="19.9880875" y1="10.55" x2="19.5670875" y2="10.129" width="0.254" layer="1"/>
@@ -1742,7 +1961,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="19.05" y1="10.129" x2="26.955" y2="10.129" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC3_IN1">
-<contactref element="U$1" pad="36"/>
+<contactref element="STM32F303" pad="36"/>
 <contactref element="J3" pad="7"/>
 <wire x1="21.1" y1="11.05" x2="19.780975" y2="11.05" width="0.254" layer="1"/>
 <wire x1="19.780975" y1="11.05" x2="19.444175" y2="10.7132" width="0.254" layer="1"/>
@@ -1752,7 +1971,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="19.05" y1="10.7132" x2="28.9108" y2="10.7132" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC2_IN12">
-<contactref element="U$1" pad="37"/>
+<contactref element="STM32F303" pad="37"/>
 <contactref element="J3" pad="6"/>
 <wire x1="21.1" y1="11.55" x2="19.5738625" y2="11.55" width="0.254" layer="1"/>
 <wire x1="19.5738625" y1="11.55" x2="19.3212625" y2="11.2974" width="0.254" layer="1"/>
@@ -1762,7 +1981,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="19.05" y1="11.2974" x2="30.8666" y2="11.2974" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC3_IN13">
-<contactref element="U$1" pad="38"/>
+<contactref element="STM32F303" pad="38"/>
 <contactref element="J3" pad="5"/>
 <wire x1="21.1" y1="12.05" x2="19.36675" y2="12.05" width="0.254" layer="1"/>
 <wire x1="19.36675" y1="12.05" x2="19.19835" y2="11.8816" width="0.254" layer="1"/>
@@ -1772,7 +1991,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="19.05" y1="11.8816" x2="32.8224" y2="11.8816" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC3_IN6">
-<contactref element="U$1" pad="39"/>
+<contactref element="STM32F303" pad="39"/>
 <contactref element="J3" pad="4"/>
 <wire x1="21.1" y1="12.55" x2="19.1596375" y2="12.55" width="0.254" layer="1"/>
 <wire x1="19.1596375" y1="12.55" x2="19.0754375" y2="12.4658" width="0.254" layer="1"/>
@@ -1784,7 +2003,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="32.98928125" y1="14.25471875" x2="33.02" y2="14.224" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC3_IN2">
-<contactref element="U$1" pad="40"/>
+<contactref element="STM32F303" pad="40"/>
 <contactref element="J3" pad="3"/>
 <via x="19.05" y="13.05" extent="1-16" drill="0.3048"/>
 <wire x1="21.1" y1="13.05" x2="19.05" y2="13.05" width="0.254" layer="1"/>
@@ -1795,7 +2014,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="32.005375" y1="16.764" x2="33.02" y2="16.764" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC3_IN14">
-<contactref element="U$1" pad="41"/>
+<contactref element="STM32F303" pad="41"/>
 <contactref element="J3" pad="2"/>
 <wire x1="21.1" y1="13.55" x2="19.1596375" y2="13.55" width="0.254" layer="1"/>
 <wire x1="19.1596375" y1="13.55" x2="19.0754375" y2="13.6342" width="0.254" layer="1"/>
@@ -1808,7 +2027,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="28.0493875" y1="13.6342" x2="31.115" y2="16.6998125" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC3_IN15">
-<contactref element="U$1" pad="42"/>
+<contactref element="STM32F303" pad="42"/>
 <contactref element="J3" pad="1"/>
 <wire x1="21.1" y1="14.05" x2="19.36675" y2="14.05" width="0.254" layer="1"/>
 <wire x1="19.36675" y1="14.05" x2="19.19835" y2="14.2184" width="0.254" layer="1"/>
@@ -1821,7 +2040,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="27.8074" y1="14.2184" x2="30.48" y2="16.891" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC3_IN16">
-<contactref element="U$1" pad="43"/>
+<contactref element="STM32F303" pad="43"/>
 <contactref element="J2" pad="15"/>
 <wire x1="21.1" y1="14.55" x2="19.40556875" y2="14.55" width="0.254" layer="1"/>
 <wire x1="19.1516" y1="14.701" x2="19.05" y2="14.8026" width="0.254" layer="1"/>
@@ -1835,7 +2054,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="28.805" y1="24.0101625" x2="28.805" y2="27.535" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC3_IN3">
-<contactref element="U$1" pad="44"/>
+<contactref element="STM32F303" pad="44"/>
 <contactref element="J2" pad="14"/>
 <wire x1="21.1" y1="15.05" x2="19.61268125" y2="15.05" width="0.254" layer="1"/>
 <wire x1="19.1342" y1="15.3026" x2="19.05" y2="15.3868" width="0.254" layer="1"/>
@@ -1849,7 +2068,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="28.305" y1="24.217275" x2="28.305" y2="29.575" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC4_IN1">
-<contactref element="U$1" pad="45"/>
+<contactref element="STM32F303" pad="45"/>
 <contactref element="J2" pad="13"/>
 <wire x1="21.1" y1="15.55" x2="19.7848875" y2="15.55" width="0.254" layer="1"/>
 <wire x1="19.7848875" y1="15.55" x2="19.3638875" y2="15.971" width="0.254" layer="1"/>
@@ -1862,7 +2081,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="27.805" y1="24.4243875" x2="27.805" y2="29.345" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC4_IN2">
-<contactref element="U$1" pad="46"/>
+<contactref element="STM32F303" pad="46"/>
 <contactref element="J2" pad="12"/>
 <wire x1="21.1" y1="16.05" x2="19.992" y2="16.05" width="0.254" layer="1"/>
 <wire x1="19.992" y1="16.05" x2="19.4868" y2="16.5552" width="0.254" layer="1"/>
@@ -1875,7 +2094,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="27.305" y1="24.6315" x2="27.305" y2="27.305" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC4_IN3">
-<contactref element="U$1" pad="51"/>
+<contactref element="STM32F303" pad="51"/>
 <contactref element="J2" pad="11"/>
 <wire x1="19.35" y1="19.8" x2="19.35" y2="18.8952" width="0.254" layer="1"/>
 <wire x1="19.35" y1="18.8952" x2="19.771" y2="18.4742" width="0.254" layer="1"/>
@@ -1885,7 +2104,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="19.771" y1="17.78" x2="19.771" y2="28.661" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC3_IN5">
-<contactref element="U$1" pad="52"/>
+<contactref element="STM32F303" pad="52"/>
 <contactref element="J2" pad="10"/>
 <wire x1="18.85" y1="19.8" x2="18.85" y2="18.6880875" width="0.254" layer="1"/>
 <wire x1="18.85" y1="18.6880875" x2="19.1868" y2="18.3512875" width="0.254" layer="1"/>
@@ -1895,7 +2114,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="19.1868" y1="17.78" x2="19.1868" y2="30.3432" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC4_IN4">
-<contactref element="U$1" pad="53"/>
+<contactref element="STM32F303" pad="53"/>
 <contactref element="J2" pad="9"/>
 <wire x1="18.35" y1="19.8" x2="18.35" y2="18.480975" width="0.254" layer="1"/>
 <wire x1="18.35" y1="18.480975" x2="18.6026" y2="18.228375" width="0.254" layer="1"/>
@@ -1905,7 +2124,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="18.6026" y1="17.78" x2="18.6026" y2="28.3874" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC4_IN5">
-<contactref element="U$1" pad="54"/>
+<contactref element="STM32F303" pad="54"/>
 <contactref element="J2" pad="8"/>
 <wire x1="17.85" y1="19.8" x2="17.85" y2="18.2738625" width="0.254" layer="1"/>
 <wire x1="17.85" y1="18.2738625" x2="18.0184" y2="18.1054625" width="0.254" layer="1"/>
@@ -1917,7 +2136,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="13.93928125" y1="30.44928125" x2="13.97" y2="30.48" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC4_IN12">
-<contactref element="U$1" pad="55"/>
+<contactref element="STM32F303" pad="55"/>
 <contactref element="J2" pad="7"/>
 <wire x1="17.35" y1="19.8" x2="17.35" y2="18.06675" width="0.254" layer="1"/>
 <wire x1="17.35" y1="18.06675" x2="17.4342" y2="17.98255" width="0.254" layer="1"/>
@@ -1928,7 +2147,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="17.4342" y1="23.461175" x2="11.43" y2="29.465375" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC4_IN13">
-<contactref element="U$1" pad="56"/>
+<contactref element="STM32F303" pad="56"/>
 <contactref element="J2" pad="6"/>
 <via x="16.85" y="17.78" extent="1-16" drill="0.3048"/>
 <wire x1="16.85" y1="19.8" x2="16.85" y2="17.78" width="0.254" layer="1"/>
@@ -1939,7 +2158,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="16.85" y1="23.2191875" x2="11.8751875" y2="28.194" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC3_IN7">
-<contactref element="U$1" pad="57"/>
+<contactref element="STM32F303" pad="57"/>
 <contactref element="J2" pad="5"/>
 <wire x1="16.35" y1="19.8" x2="16.35" y2="18.06675" width="0.254" layer="1"/>
 <wire x1="16.35" y1="18.06675" x2="16.2658" y2="17.98255" width="0.254" layer="1"/>
@@ -1951,7 +2170,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="11.938" y1="27.305" x2="9.525" y2="27.305" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC3_IN8">
-<contactref element="U$1" pad="58"/>
+<contactref element="STM32F303" pad="58"/>
 <contactref element="J2" pad="4"/>
 <wire x1="15.85" y1="19.8" x2="15.85" y2="18.2738625" width="0.254" layer="1"/>
 <wire x1="15.85" y1="18.2738625" x2="15.6816" y2="18.1054625" width="0.254" layer="1"/>
@@ -1964,7 +2183,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="3.81" y1="30.4185625" x2="3.81" y2="30.48" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC3_IN9">
-<contactref element="U$1" pad="59"/>
+<contactref element="STM32F303" pad="59"/>
 <contactref element="J2" pad="3"/>
 <wire x1="15.35" y1="19.8" x2="15.35" y2="18.480975" width="0.254" layer="1"/>
 <wire x1="15.35" y1="18.480975" x2="15.0974" y2="18.228375" width="0.254" layer="1"/>
@@ -1977,7 +2196,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="15.0974" y1="18.304975" x2="4.827375" y2="28.575" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC3_IN10">
-<contactref element="U$1" pad="60"/>
+<contactref element="STM32F303" pad="60"/>
 <contactref element="J2" pad="2"/>
 <wire x1="14.85" y1="19.8" x2="14.85" y2="18.6880875" width="0.254" layer="1"/>
 <wire x1="14.85" y1="18.6880875" x2="14.5132" y2="18.3512875" width="0.254" layer="1"/>
@@ -1989,7 +2208,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="14.5132" y1="18.0629875" x2="4.7631875" y2="27.813" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC3_IN11">
-<contactref element="U$1" pad="61"/>
+<contactref element="STM32F303" pad="61"/>
 <contactref element="J2" pad="1"/>
 <wire x1="14.35" y1="19.8" x2="14.35" y2="18.8952" width="0.254" layer="1"/>
 <wire x1="14.35" y1="18.8952" x2="13.929" y2="18.4742" width="0.254" layer="1"/>
@@ -2001,11 +2220,11 @@ Please make sure your boards conform to these design rules.
 <wire x1="4.699" y1="27.051" x2="-0.381" y2="27.051" width="0.254" layer="16"/>
 </signal>
 <signal name="VDDA">
-<contactref element="U$1" pad="21"/>
+<contactref element="STM32F303" pad="21"/>
 <contactref element="C8" pad="1"/>
 <contactref element="C7" pad="1"/>
 <contactref element="B1" pad="2"/>
-<contactref element="U$1" pad="22"/>
+<contactref element="STM32F303" pad="22"/>
 <wire x1="17.35" y1="4.3" x2="17.85" y2="4.3" width="0.254" layer="1"/>
 <wire x1="17.85" y1="4.3" x2="17.85" y2="2.356" width="0.254" layer="1"/>
 <wire x1="17.85" y1="2.356" x2="17.78" y2="2.286" width="0.254" layer="1"/>
@@ -2014,7 +2233,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="17.78" y1="-0.674" x2="17.78" y2="0.889" width="0.254" layer="1"/>
 </signal>
 <signal name="XTI">
-<contactref element="U$1" pad="12"/>
+<contactref element="STM32F303" pad="12"/>
 <contactref element="X1" pad="2"/>
 <contactref element="C14" pad="2"/>
 <wire x1="12.85" y1="4.3" x2="12.85" y2="3.198" width="0.254" layer="1"/>
@@ -2025,7 +2244,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="10.584" y1="-0.889" x2="9.525" y2="-0.889" width="0.254" layer="1"/>
 </signal>
 <signal name="XTO">
-<contactref element="U$1" pad="13"/>
+<contactref element="STM32F303" pad="13"/>
 <contactref element="R7" pad="1"/>
 <wire x1="13.35" y1="4.3" x2="13.35" y2="2.437" width="0.254" layer="1"/>
 <wire x1="13.35" y1="2.437" x2="13.628" y2="2.159" width="0.254" layer="1" curve="90"/>
@@ -2055,10 +2274,12 @@ Please make sure your boards conform to these design rules.
 <contactref element="J4" pad="D+"/>
 <wire x1="-12.59" y1="20.066" x2="-9.613" y2="20.066" width="0.254" layer="1"/>
 <wire x1="-9.613" y1="20.066" x2="-8.851" y2="19.304" width="0.254" layer="1" curve="-90"/>
+<contactref element="R10" pad="2"/>
+<wire x1="-8.851" y1="19.304" x2="-8.851" y2="17.272" width="0.254" layer="1"/>
 </signal>
 <signal name="USBD_N">
 <contactref element="R1" pad="1"/>
-<contactref element="U$1" pad="70"/>
+<contactref element="STM32F303" pad="70"/>
 <wire x1="2.2705875" y1="22.0825875" x2="8.93623125" y2="22.0825875" width="0.254" layer="1"/>
 <wire x1="-7.151" y1="21.336" x2="-6.3255" y2="20.5105" width="0.254" layer="1" curve="90"/>
 <wire x1="-6.3255" y1="20.5105" x2="0.6985" y2="20.5105" width="0.254" layer="1"/>
@@ -2069,7 +2290,7 @@ Please make sure your boards conform to these design rules.
 </signal>
 <signal name="USBD_P">
 <contactref element="R2" pad="1"/>
-<contactref element="U$1" pad="71"/>
+<contactref element="STM32F303" pad="71"/>
 <wire x1="2.3975875" y1="21.5745875" x2="8.8038125" y2="21.5745875" width="0.254" layer="1"/>
 <wire x1="9.350103125" y1="19.800103125" x2="9.35" y2="19.8" width="0.254" layer="1"/>
 <wire x1="-7.151" y1="19.304" x2="-6.3255" y2="20.1295" width="0.254" layer="1" curve="-90"/>
@@ -2107,6 +2328,84 @@ Please make sure your boards conform to these design rules.
 <contactref element="R9" pad="1"/>
 <wire x1="-11.049" y1="0.127" x2="-8.929" y2="0.127" width="0.4064" layer="1"/>
 <wire x1="-8.929" y1="0.127" x2="-7.366" y2="1.69" width="0.4064" layer="1"/>
+</signal>
+<signal name="OUT1">
+<contactref element="U5" pad="3"/>
+<contactref element="R12" pad="4"/>
+<wire x1="49.262" y1="10.484" x2="46.863" y2="8.085" width="0.2032" layer="16"/>
+<wire x1="46.863" y1="3.567" x2="45.477" y2="2.181" width="0.2032" layer="16"/>
+<wire x1="46.863" y1="8.085" x2="46.863" y2="3.567" width="0.2032" layer="16"/>
+<contactref element="PHOTO" pad="1"/>
+<wire x1="49.262" y1="10.484" x2="50.476" y2="10.484" width="0.254" layer="16"/>
+<wire x1="50.476" y1="10.484" x2="53.086" y2="7.874" width="0.254" layer="16"/>
+</signal>
+<signal name="OUT2">
+<contactref element="U6" pad="3"/>
+<contactref element="R12" pad="3"/>
+<wire x1="49.262" y1="11.284" x2="48.749" y2="11.284" width="0.2032" layer="16"/>
+<wire x1="48.749" y1="11.284" x2="48.387" y2="10.922" width="0.2032" layer="16"/>
+<wire x1="48.387" y1="10.922" x2="48.387" y2="10.16" width="0.2032" layer="16"/>
+<wire x1="48.387" y1="10.16" x2="48.028" y2="9.801" width="0.2032" layer="16"/>
+<wire x1="48.028" y1="9.801" x2="45.477" y2="9.801" width="0.2032" layer="16"/>
+<contactref element="PHOTO" pad="2"/>
+<wire x1="49.262" y1="11.284" x2="52.216" y2="11.284" width="0.254" layer="16"/>
+<wire x1="52.216" y1="11.284" x2="53.086" y2="10.414" width="0.254" layer="16"/>
+</signal>
+<signal name="OUT3">
+<contactref element="U7" pad="3"/>
+<contactref element="R12" pad="2"/>
+<wire x1="49.262" y1="12.084" x2="48.749" y2="12.084" width="0.2032" layer="16"/>
+<wire x1="48.749" y1="12.084" x2="48.387" y2="12.446" width="0.2032" layer="16"/>
+<wire x1="48.387" y1="12.446" x2="48.387" y2="13.2561" width="0.2032" layer="16"/>
+<wire x1="45.477" y1="16.1661" x2="45.477" y2="17.421" width="0.2032" layer="16"/>
+<wire x1="48.387" y1="13.2561" x2="45.477" y2="16.1661" width="0.2032" layer="16"/>
+<contactref element="PHOTO" pad="3"/>
+<wire x1="49.262" y1="12.084" x2="52.216" y2="12.084" width="0.254" layer="16"/>
+<wire x1="52.216" y1="12.084" x2="53.086" y2="12.954" width="0.254" layer="16"/>
+</signal>
+<signal name="OUT4">
+<contactref element="U8" pad="3"/>
+<contactref element="R12" pad="1"/>
+<wire x1="49.262" y1="12.884" x2="46.609" y2="15.537" width="0.2032" layer="16"/>
+<wire x1="46.609" y1="23.909" x2="45.477" y2="25.041" width="0.2032" layer="16"/>
+<wire x1="46.609" y1="15.537" x2="46.609" y2="23.909" width="0.2032" layer="16"/>
+<contactref element="PHOTO" pad="4"/>
+<wire x1="49.262" y1="12.884" x2="50.476" y2="12.884" width="0.254" layer="16"/>
+<wire x1="50.476" y1="12.884" x2="53.086" y2="15.494" width="0.254" layer="16"/>
+</signal>
+<signal name="N$13">
+<contactref element="U5" pad="1"/>
+<contactref element="R13" pad="1"/>
+<wire x1="39.892" y1="10.484" x2="42.291" y2="8.085" width="0.2032" layer="16"/>
+<wire x1="42.291" y1="-0.287" x2="43.677" y2="-1.673" width="0.2032" layer="16"/>
+<wire x1="42.291" y1="8.085" x2="42.291" y2="-0.287" width="0.2032" layer="16"/>
+</signal>
+<signal name="N$14">
+<contactref element="U6" pad="1"/>
+<contactref element="R13" pad="2"/>
+<wire x1="39.892" y1="11.284" x2="40.1624" y2="11.284" width="0.2032" layer="16"/>
+<wire x1="42.6466" y1="8.2753" x2="42.6466" y2="6.9774" width="0.2032" layer="16"/>
+<wire x1="42.6466" y1="6.9774" x2="43.677" y2="5.947" width="0.2032" layer="16"/>
+<wire x1="40.767" y1="10.1549" x2="42.6466" y2="8.2753" width="0.2032" layer="16"/>
+<wire x1="40.1624" y1="11.284" x2="40.767" y2="10.6794" width="0.2032" layer="16"/>
+<wire x1="40.767" y1="10.6794" x2="40.767" y2="10.1549" width="0.2032" layer="16"/>
+</signal>
+<signal name="N$15">
+<contactref element="U7" pad="1"/>
+<contactref element="R13" pad="3"/>
+<wire x1="41.126" y1="13.567" x2="40.767" y2="13.208" width="0.2032" layer="16"/>
+<wire x1="41.126" y1="13.567" x2="43.677" y2="13.567" width="0.2032" layer="16"/>
+<wire x1="40.767" y1="12.6886" x2="40.1624" y2="12.084" width="0.2032" layer="16"/>
+<wire x1="40.1624" y1="12.084" x2="39.892" y2="12.084" width="0.2032" layer="16"/>
+<wire x1="40.767" y1="13.208" x2="40.767" y2="12.6886" width="0.2032" layer="16"/>
+</signal>
+<signal name="N$16">
+<contactref element="U8" pad="1"/>
+<contactref element="R13" pad="4"/>
+<wire x1="39.892" y1="12.884" x2="42.291" y2="15.283" width="0.2032" layer="16"/>
+<wire x1="42.291" y1="19.812" x2="43.666" y2="21.187" width="0.2032" layer="16"/>
+<wire x1="43.666" y1="21.187" x2="43.677" y2="21.187" width="0.2032" layer="16"/>
+<wire x1="42.291" y1="15.283" x2="42.291" y2="19.812" width="0.2032" layer="16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
