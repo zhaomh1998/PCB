@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -533,7 +533,7 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <text x="-0.15" y="1.35" size="0.6096" layer="21" rot="R90">GND</text>
 <rectangle x1="-14.7" y1="0.5" x2="0.5" y2="5.7" layer="39"/>
 <rectangle x1="-14.7" y1="0.5" x2="0.5" y2="5.7" layer="40"/>
-<polygon width="0" layer="1">
+<polygon width="0.000253125" layer="1">
 <vertex x="0" y="0"/>
 <vertex x="0" y="5.4"/>
 <vertex x="-5" y="5.4"/>
@@ -563,6 +563,53 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <vertex x="-0.9" y="4.9"/>
 <vertex x="-0.9" y="0"/>
 </polygon>
+</package>
+<package name="AN043_LEFT">
+<description>&lt;h1&gt;PCB Antenna&lt;/h1&gt;
+&lt;p&gt;From &lt;A HREF="http://www.ti.com/lit/an/swra117d/swra117d.pdf"&gt;Texas Instruments Application Node AN043&lt;/A&gt;</description>
+<smd name="ANT" x="-3.9" y="-2.79" dx="0.5" dy="0.5" layer="1"/>
+<smd name="GND" x="-5.9" y="-2.79" dx="0.9" dy="0.5" layer="1"/>
+<wire x1="8.25" y1="-2.54" x2="-6.85" y2="-2.54" width="0.1" layer="21"/>
+<wire x1="-6.85" y1="-2.54" x2="-6.85" y2="2.56" width="0.1" layer="21"/>
+<rectangle x1="-6.35" y1="-2.54" x2="-5.45" y2="1.86" layer="1"/>
+<rectangle x1="-6.35" y1="1.86" x2="-1.35" y2="2.36" layer="1"/>
+<rectangle x1="-4.15" y1="-2.54" x2="-3.65" y2="1.86" layer="1"/>
+<rectangle x1="0.65" y1="1.86" x2="3.35" y2="2.36" layer="1"/>
+<rectangle x1="5.35" y1="1.86" x2="8.05" y2="2.36" layer="1"/>
+<rectangle x1="7.55" y1="-2.08" x2="8.05" y2="1.86" layer="1"/>
+<wire x1="-6.85" y1="2.56" x2="8.25" y2="2.56" width="0.1" layer="21"/>
+<wire x1="8.25" y1="2.56" x2="8.25" y2="-2.54" width="0.1" layer="21"/>
+<pad name="GND-PAD1" x="-5.9" y="-2.79" drill="0.4"/>
+<rectangle x1="5.35" y1="-0.78" x2="5.85" y2="1.86" layer="1"/>
+<rectangle x1="-1.35" y1="-0.78" x2="0.65" y2="-0.28" layer="1"/>
+<rectangle x1="2.85" y1="-0.78" x2="3.35" y2="1.86" layer="1"/>
+<rectangle x1="0.65" y1="-0.78" x2="1.15" y2="1.86" layer="1"/>
+<rectangle x1="-1.85" y1="-0.78" x2="-1.35" y2="1.86" layer="1"/>
+<rectangle x1="3.35" y1="-0.78" x2="5.35" y2="-0.28" layer="1"/>
+<text x="-2.35" y="-2.14" size="1.016" layer="21">2.4Ghz Ant</text>
+</package>
+<package name="AN043_RIGHT">
+<description>&lt;h1&gt;PCB Antenna&lt;/h1&gt;
+&lt;p&gt;From &lt;A HREF="http://www.ti.com/lit/an/swra117d/swra117d.pdf"&gt;Texas Instruments Application Node AN043&lt;/A&gt;</description>
+<smd name="ANT" x="-3.72" y="-2.79" dx="0.5" dy="0.5" layer="1" rot="R180"/>
+<smd name="GND" x="-1.72" y="-2.79" dx="0.9" dy="0.5" layer="1" rot="R180"/>
+<wire x1="-15.87" y1="-2.54" x2="-0.77" y2="-2.54" width="0.1" layer="21"/>
+<wire x1="-0.77" y1="-2.54" x2="-0.77" y2="2.56" width="0.1" layer="21"/>
+<rectangle x1="-2.17" y1="-2.54" x2="-1.27" y2="1.86" layer="1" rot="R180"/>
+<rectangle x1="-6.27" y1="1.86" x2="-1.27" y2="2.36" layer="1" rot="R180"/>
+<rectangle x1="-3.97" y1="-2.54" x2="-3.47" y2="1.86" layer="1" rot="R180"/>
+<rectangle x1="-10.97" y1="1.86" x2="-8.27" y2="2.36" layer="1" rot="R180"/>
+<rectangle x1="-15.67" y1="1.86" x2="-12.97" y2="2.36" layer="1" rot="R180"/>
+<rectangle x1="-15.67" y1="-2.08" x2="-15.17" y2="1.86" layer="1" rot="R180"/>
+<wire x1="-0.77" y1="2.56" x2="-15.87" y2="2.56" width="0.1" layer="21"/>
+<wire x1="-15.87" y1="2.56" x2="-15.87" y2="-2.54" width="0.1" layer="21"/>
+<pad name="GND-PAD1" x="-1.72" y="-2.79" drill="0.4" rot="R180"/>
+<rectangle x1="-13.47" y1="-0.78" x2="-12.97" y2="1.86" layer="1" rot="R180"/>
+<rectangle x1="-8.27" y1="-0.78" x2="-6.27" y2="-0.28" layer="1" rot="R180"/>
+<rectangle x1="-10.97" y1="-0.78" x2="-10.47" y2="1.86" layer="1" rot="R180"/>
+<rectangle x1="-8.77" y1="-0.78" x2="-8.27" y2="1.86" layer="1" rot="R180"/>
+<rectangle x1="-6.27" y1="-0.78" x2="-5.77" y2="1.86" layer="1" rot="R180"/>
+<rectangle x1="-12.97" y1="-0.78" x2="-10.97" y2="-0.28" layer="1" rot="R180"/>
 </package>
 </packages>
 <symbols>
@@ -758,6 +805,24 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <connects>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="RF" pad="RF"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="REV1_LEFT" package="AN043_LEFT">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND GND-PAD1"/>
+<connect gate="G$1" pin="RF" pad="ANT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="REV1_RIGHT" package="AN043_RIGHT">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND GND-PAD1"/>
+<connect gate="G$1" pin="RF" pad="ANT"/>
 </connects>
 <technologies>
 <technology name=""/>
